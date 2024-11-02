@@ -44,7 +44,11 @@
 		}
 		$ta = $topics[$tid]['author'];
 
-		$dt = date('Y-m-d H:i:s', $topics[$tid]['time']);
+		if ($topics[$tid]['time'] instanceof int) {
+			$dt = date('Y-m-d H:i:s', $topics[$tid]['time']);
+		} else {
+			$dt = $topics[$tid]['time'];
+		}
 
 ?>
 <tr><td class="t"><a href="<?=$tid;?>/<?= $slug ?>/"><?=$title;?></a></td>

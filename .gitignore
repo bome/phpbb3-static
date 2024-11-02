@@ -2,3 +2,6 @@ config.php
 /forum-data.json
 /forum-data_download_cache.dbm
 /redirection-data.php
+/cma_legacy_write_html_log.txt
+/cma_forum-data.json
+/cma_extract_log.txt
