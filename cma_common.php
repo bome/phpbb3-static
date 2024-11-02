@@ -77,6 +77,7 @@ function setLogfile($logfile) {
 }
 
 function log_info($str) {
+	global $logfilename;
 	print($str);
 	if (!empty($logfilename)) {
         file_put_contents($logfilename, $str , FILE_APPEND | LOCK_EX);

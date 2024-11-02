@@ -5,3 +5,4 @@ config.php
 /cma_legacy_write_html_log.txt
 /cma_forum-data.json
 /cma_extract_log.txt
+/cma_clean_wp_db_log.txt
